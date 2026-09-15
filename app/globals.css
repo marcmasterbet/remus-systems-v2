@@ -7890,3 +7890,134 @@ body:has(.home-reference) .footer-bottom {
 .home-reference .home-intro {
   color: #C97942 !important;
 }
+
+/* =========================================================
+   REMUS V2 — AUDIT REMUS CINÉMATIQUE
+   Visuel plein écran + contenus historiques conservés en HTML.
+   ========================================================= */
+body:has(.audit-remus-page) {
+  background: #050505 !important;
+}
+.audit-remus-page {
+  background: #050505 !important;
+  color: #f7f4ef !important;
+}
+.audit-premium-hero {
+  position: relative !important;
+  isolation: isolate;
+  min-height: calc(100vh - 92px) !important;
+  display: flex !important;
+  align-items: center !important;
+  overflow: hidden !important;
+  background: #050505 !important;
+}
+.audit-premium-visual {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  z-index: -2 !important;
+  overflow: hidden !important;
+}
+.audit-cube-image {
+  padding: 0 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  filter: contrast(1.02) saturate(.98) brightness(.82) !important;
+  image-rendering: auto !important;
+}
+.audit-premium-visual::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: auto !important;
+  aspect-ratio: auto !important;
+  border-radius: 0 !important;
+  background: linear-gradient(90deg,
+    rgba(3,3,3,.98) 0%,
+    rgba(3,3,3,.93) 25%,
+    rgba(3,3,3,.68) 39%,
+    rgba(3,3,3,.12) 57%,
+    rgba(3,3,3,0) 72%) !important;
+  filter: none !important;
+  z-index: 3 !important;
+  pointer-events: none;
+}
+.audit-premium-visual::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: auto 0 0 !important;
+  height: 18% !important;
+  background: linear-gradient(180deg, transparent, #050505) !important;
+  z-index: 3 !important;
+  pointer-events: none;
+}
+.audit-visual-light { display: none !important; }
+.audit-premium-copy {
+  width: min(690px, 46vw) !important;
+  padding: 72px 0 72px 4.2vw !important;
+  position: relative !important;
+  z-index: 5 !important;
+}
+.audit-kicker { color: #c97942 !important; }
+.audit-small-line { background: #c97942 !important; }
+.audit-premium-copy h1 { color: #f7f4ef !important; text-shadow: 0 3px 24px rgba(0,0,0,.45); }
+.audit-premium-copy h1 strong { color: #c97942 !important; }
+.audit-intro { color: #c97942 !important; text-shadow: 0 2px 16px rgba(0,0,0,.55); }
+.audit-approach {
+  background: radial-gradient(circle at 70% 0%, rgba(169,79,22,.10), transparent 32%), #050505 !important;
+  color: #f7f4ef !important;
+}
+.audit-approach p { color: rgba(247,244,239,.68) !important; }
+.audit-section-heading span,
+.audit-final-copy > span { color: #c97942 !important; }
+.audit-step { background: #0b0b0b !important; border-color: rgba(201,121,66,.20) !important; }
+.audit-step h2 { color: #f7f4ef !important; }
+.audit-step-symbol { border-color: rgba(201,121,66,.45) !important; color: #c97942 !important; }
+.audit-final-block { background: #090909 !important; border-color: rgba(201,121,66,.18) !important; }
+.audit-final-copy h2 { color: #f7f4ef !important; }
+.audit-final-copy h2 strong { color: #c97942 !important; }
+body:has(.audit-remus-page) .footer {
+  background: #050505 !important;
+  color: #f7f4ef !important;
+  border-top: 1px solid rgba(201,121,66,.20) !important;
+}
+body:has(.audit-remus-page) .footer h3,
+body:has(.audit-remus-page) .footer-title,
+body:has(.audit-remus-page) .footer-nav-title,
+body:has(.audit-remus-page) .footer-legal-title { color: #c97942 !important; }
+body:has(.audit-remus-page) .footer a,
+body:has(.audit-remus-page) .footer p,
+body:has(.audit-remus-page) .footer button { color: rgba(247,244,239,.78) !important; }
+
+@media (max-width: 900px) {
+  .audit-premium-hero {
+    min-height: 820px !important;
+    padding: 0 !important;
+    align-items: flex-start !important;
+  }
+  .audit-premium-copy {
+    width: 100% !important;
+    padding: 62px 26px 350px !important;
+  }
+  .audit-premium-visual {
+    position: absolute !important;
+    inset: 0 !important;
+    height: 100% !important;
+    margin: 0 !important;
+  }
+  .audit-cube-image { object-position: 64% center !important; }
+  .audit-premium-visual::before {
+    background: linear-gradient(180deg,
+      #050505 0%, rgba(5,5,5,.97) 31%, rgba(5,5,5,.73) 49%,
+      rgba(5,5,5,.12) 68%, #050505 100%) !important;
+  }
+  .audit-intro { max-width: 620px !important; }
+}
+@media (max-width: 620px) {
+  .audit-premium-hero { min-height: 880px !important; }
+  .audit-premium-copy { padding: 48px 22px 390px !important; }
+  .audit-cube-image { object-position: 62% 72% !important; }
+}

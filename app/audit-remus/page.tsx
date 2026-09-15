@@ -89,7 +89,7 @@ export default function AuditRemusPage() {
         <div className="audit-premium-visual">
 
           <Image
-            src="/visuals/audit-cube.png"
+            src="/visuals/audit-remus-v2-bg.jpg"
             alt="Architecture systémique REMUS — interactions, dépendances, données, processus et humain & IA"
             fill
             priority
