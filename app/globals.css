@@ -8021,3 +8021,13 @@ body:has(.audit-remus-page) .footer button { color: rgba(247,244,239,.78) !impor
   .audit-premium-copy { padding: 48px 22px 390px !important; }
   .audit-cube-image { object-position: 62% 72% !important; }
 }
+
+/* REMUS V2 — Audit : visuel légèrement réduit pour préserver la netteté */
+@media (min-width: 901px) {
+  .audit-cube-image {
+    object-fit: contain !important;
+    object-position: 58% center !important;
+    transform: scale(.96) !important;
+    transform-origin: 58% center !important;
+  }
+}
