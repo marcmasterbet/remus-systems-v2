@@ -5607,7 +5607,7 @@ form.contact-form {
   object-position: center !important;
   opacity: 1 !important;
   filter: none !important;
-  transform: scale(.96) !important;
+  transform: scale(.98) !important;
   transform-origin: center !important;
   background: transparent !important;
   border: 0 !important;
@@ -5674,7 +5674,7 @@ form.contact-form {
   }
 
   .contact-mail-hero img {
-    transform: scale(.96) !important;
+    transform: scale(.98) !important;
   }
 }
 
@@ -5752,7 +5752,7 @@ form.contact-form {
   }
 
   .solutions-hero-visual img {
-    transform: scale(.96) !important;
+    transform: scale(.98) !important;
   }
 }
 
@@ -8027,7 +8027,7 @@ body:has(.audit-remus-page) .footer button { color: rgba(247,244,239,.78) !impor
   .audit-cube-image {
     object-fit: contain !important;
     object-position: 58% center !important;
-    transform: scale(.96) !important;
+    transform: scale(.98) !important;
     transform-origin: 58% center !important;
   }
 }
