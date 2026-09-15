@@ -7870,3 +7870,18 @@ body:has(.home-reference) .footer-bottom {
     padding: 52px 22px 28px !important;
   }
 }
+
+/* REMUS V2 — optimisation de netteté du hero (15-09-2026)
+   Pas de zoom CSS : la source HD est réduite par le navigateur, jamais agrandie artificiellement. */
+.home-reference .home-network img {
+  content: url('/visuals/remus-v2-earth-network-hd.jpg') !important;
+  transform: none !important;
+  filter: contrast(1.025) saturate(.96) brightness(.74) !important;
+  image-rendering: auto !important;
+  backface-visibility: hidden;
+}
+@media (max-width: 900px) {
+  .home-reference .home-network img {
+    transform: none !important;
+  }
+}
