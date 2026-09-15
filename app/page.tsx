@@ -133,7 +133,7 @@ export default function Home() {
           aria-hidden="true"
         >
           <img
-            src="/visuals/hero-remus.png"
+            src="/visuals/remus-v2-earth-network.png"
             alt=""
           />
         </div>

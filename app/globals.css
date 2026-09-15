@@ -7732,16 +7732,16 @@ form.contact-form {
   pointer-events: none !important;
 }
 .home-reference .home-network img {
-  content: url('/visuals/home-v2-earth-hd.jpg') !important;
+  content: url('/visuals/remus-v2-earth-network.png') !important;
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
-  object-position: 68% center !important;
+  object-position: 58% center !important;
   opacity: .98 !important;
   mix-blend-mode: normal !important;
-  filter: contrast(1.08) saturate(.94) brightness(.76) !important;
+  filter: contrast(1.04) saturate(.92) brightness(.72) !important;
   -webkit-mask-image: none !important;
   mask-image: none !important;
   transform: scale(1.01) !important;
@@ -7840,7 +7840,7 @@ body:has(.home-reference) .footer-bottom {
         #050607 100%) !important;
   }
   .home-reference .home-network img {
-    object-position: 72% 78% !important;
+    object-position: 69% 74% !important;
     transform: scale(1.04) !important;
   }
   .home-reference .home-copy {
@@ -7856,7 +7856,7 @@ body:has(.home-reference) .footer-bottom {
     min-height: 790px !important;
   }
   .home-reference .home-network img {
-    object-position: 72% 78% !important;
+    object-position: 69% 74% !important;
   }
   .home-reference .home-feature-strip {
     gap: 14px !important;
