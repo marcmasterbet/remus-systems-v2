@@ -7885,3 +7885,8 @@ body:has(.home-reference) .footer-bottom {
     transform: none !important;
   }
 }
+
+/* REMUS V2 — texte d'introduction hero en cuivre */
+.home-reference .home-intro {
+  color: #C97942 !important;
+}
