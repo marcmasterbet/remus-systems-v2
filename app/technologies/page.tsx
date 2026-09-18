@@ -62,65 +62,40 @@ const capabilities = [
 export default function TechnologiesPage() {
   return (
     <main className="limes-page">
-      <section className="limes-hero-exact">
-        <div className="limes-copy-exact">
-          <div className="limes-eyebrow">NOS TECHNOLOGIES</div>
-          <div className="limes-rule" />
-
-          <div className="limes-logo-text" aria-label="LIMES">
-            <span>L</span>
-            <span>I</span>
-            <span>M</span>
-            <span className="limes-e">E</span>
-            <span>S</span>
-          </div>
+      <section className="remus-limes-v2-hero">
+        <div className="remus-limes-v2-copy">
+          <div className="remus-limes-v2-kicker">NOS TECHNOLOGIES</div>
+          <div className="remus-limes-v2-rule" />
+          <div className="remus-limes-v2-brand">LIMES</div>
 
           <h1>
-            L’intelligence au service
-            <br />
-            des <span>systèmes complexes.</span>
+            L’intelligence au service des<br />
+            <span>systèmes complexes.</span>
           </h1>
 
-          <div className="limes-rule limes-rule--spaced" />
-
           <p>
-            LIMES intègre l’intelligence humaine et artificielle
-            <br />
-            dans des architectures avancées pour analyser,
-            <br />
-            décider et agir avec justesse.
+            LIMES intègre l’intelligence humaine et artificielle dans des architectures avancées
+            pour analyser, décider et agir avec justesse.
           </p>
 
-          <div className="limes-actions">
-            <Link
-              href="/solutions"
-              className="limes-button limes-button--copper"
-            >
+          <div className="remus-limes-v2-actions">
+            <Link href="/solutions" className="remus-limes-v2-btn remus-limes-v2-btn-primary">
               DÉCOUVRIR NOS SOLUTIONS <span>→</span>
             </Link>
-
-            <Link
-              href="/a-propos"
-              className="limes-button limes-button--outline"
-            >
+            <Link href="/a-propos" className="remus-limes-v2-btn remus-limes-v2-btn-secondary">
               NOTRE VISION <span>→</span>
             </Link>
           </div>
         </div>
 
-        <div className="limes-visual-exact" aria-hidden="true">
+        <div className="remus-limes-v2-art" aria-hidden="true">
           <Image
             src="/visuals/limes-hero-v2.jpeg"
             alt=""
             fill
             priority
-            sizes="(max-width: 900px) 100vw, 64vw"
+            sizes="(max-width: 900px) 94vw, 55vw"
           />
-        </div>
-
-        <div className="limes-signature">
-          <strong>INTÉGRER. COMPRENDRE. AGIR.</strong>
-          <span>L’INTELLIGENCE AU SERVICE DES SYSTÈMES COMPLEXES.</span>
         </div>
       </section>
 
