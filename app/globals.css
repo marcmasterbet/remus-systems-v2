@@ -8241,3 +8241,139 @@ body:has(.audit-remus-page) .footer button:hover {
     object-position: center center !important;
   }
 }
+
+/* =========================================================
+   REMUS V2 — LIMES HERO TEST : texte HTML comme Accueil/Audit
+   ========================================================= */
+.limes-hero-exact {
+  position: relative !important;
+  display: block !important;
+  min-height: clamp(690px, 56.25vw, 900px) !important;
+  isolation: isolate;
+}
+
+.limes-hero-exact::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(90deg,
+    rgba(3,4,5,.96) 0%,
+    rgba(3,4,5,.88) 24%,
+    rgba(3,4,5,.50) 40%,
+    rgba(3,4,5,.08) 58%,
+    transparent 72%);
+}
+
+.limes-hero-exact .limes-copy-exact {
+  display: block !important;
+  position: relative !important;
+  z-index: 5 !important;
+  width: min(610px, 46vw) !important;
+  padding: clamp(86px, 8vw, 120px) 0 70px !important;
+  margin-left: clamp(48px, 6vw, 96px) !important;
+  color: #F7F4EF !important;
+}
+
+.limes-hero-exact .limes-eyebrow {
+  color: #d7c8bd !important;
+  letter-spacing: .26em !important;
+}
+
+.limes-hero-exact .limes-rule {
+  background: linear-gradient(90deg, #C97942, rgba(201,121,66,.15)) !important;
+  box-shadow: 0 0 16px rgba(201,121,66,.25);
+}
+
+/* Le mot LIMES est déjà au cœur du visuel fourni. */
+.limes-hero-exact .limes-logo-text {
+  display: none !important;
+}
+
+.limes-hero-exact .limes-copy-exact h1 {
+  margin-top: 34px !important;
+  color: #F5F2EE !important;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
+  font-size: clamp(42px, 4.25vw, 66px) !important;
+  line-height: 1.08 !important;
+  font-weight: 700 !important;
+  letter-spacing: -.035em !important;
+  text-transform: none !important;
+  text-shadow: 0 2px 22px rgba(0,0,0,.32);
+}
+
+.limes-hero-exact .limes-copy-exact h1 span {
+  color: #C97942 !important;
+  font-weight: 400 !important;
+  letter-spacing: -.025em !important;
+}
+
+.limes-hero-exact .limes-copy-exact p {
+  color: rgba(247,244,239,.76) !important;
+  font-size: 13px !important;
+  line-height: 1.9 !important;
+}
+
+.limes-hero-exact .limes-button {
+  min-width: 230px;
+  border-color: rgba(201,121,66,.70) !important;
+  color: #F7F4EF !important;
+}
+
+.limes-hero-exact .limes-button--copper {
+  background: linear-gradient(105deg, #7f340d 0%, #ad5119 54%, #79300b 100%) !important;
+}
+
+.limes-hero-exact .limes-button--outline {
+  background: rgba(7,8,9,.48) !important;
+  backdrop-filter: blur(8px);
+}
+
+.limes-hero-exact .limes-signature {
+  display: none !important;
+}
+
+.limes-hero-exact .limes-visual-exact {
+  z-index: 1 !important;
+}
+
+/* On décale légèrement le visuel afin de libérer la zone de lecture à gauche. */
+.limes-hero-exact .limes-visual-exact img {
+  object-position: 58% center !important;
+}
+
+@media (max-width: 900px) {
+  .limes-hero-exact {
+    min-height: 880px !important;
+  }
+  .limes-hero-exact::after {
+    background: linear-gradient(180deg,
+      rgba(3,4,5,.97) 0%,
+      rgba(3,4,5,.90) 38%,
+      rgba(3,4,5,.34) 61%,
+      rgba(3,4,5,.06) 78%,
+      transparent 100%);
+  }
+  .limes-hero-exact .limes-copy-exact {
+    width: auto !important;
+    margin: 0 26px !important;
+    padding: 58px 0 390px !important;
+  }
+  .limes-hero-exact .limes-copy-exact h1 {
+    font-size: clamp(38px, 9vw, 52px) !important;
+  }
+  .limes-hero-exact .limes-copy-exact p br {
+    display: none;
+  }
+  .limes-hero-exact .limes-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .limes-hero-exact .limes-button {
+    width: min(100%, 320px) !important;
+  }
+  .limes-hero-exact .limes-visual-exact img {
+    object-position: center center !important;
+  }
+}
