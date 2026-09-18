@@ -8172,3 +8172,72 @@ body:has(.audit-remus-page) .footer a:hover,
 body:has(.audit-remus-page) .footer button:hover {
   color: #A94F16 !important;
 }
+
+/* =========================================================
+   REMUS V2 — TECHNOLOGIES / LIMES
+   Header ivoire (global) → hero noir avec visuel LIMES → contenu ivoire.
+   Visuel fourni par le client, conservé sans filtre ni régénération.
+   ========================================================= */
+.limes-page {
+  background: #F7F4EF !important;
+}
+
+.limes-hero-exact {
+  width: 100% !important;
+  max-width: none !important;
+  min-height: clamp(560px, 56.25vw, 900px) !important;
+  margin: 0 !important;
+  background: #050403 !important;
+  overflow: hidden !important;
+}
+
+/* Le visuel fourni constitue le hero : pas de doublon de texte par-dessus. */
+.limes-hero-exact .limes-copy-exact,
+.limes-hero-exact .limes-signature {
+  display: none !important;
+}
+
+.limes-hero-exact .limes-visual-exact {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+.limes-hero-exact .limes-visual-exact::before {
+  display: none !important;
+}
+
+.limes-hero-exact .limes-visual-exact img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  mix-blend-mode: normal !important;
+  filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.limes-capabilities {
+  background: #F7F4EF !important;
+  color: #111111 !important;
+}
+
+@media (max-width: 900px) {
+  .limes-hero-exact {
+    min-height: 64vw !important;
+  }
+
+  .limes-hero-exact .limes-visual-exact {
+    height: 100% !important;
+  }
+
+  .limes-hero-exact .limes-visual-exact img {
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+}

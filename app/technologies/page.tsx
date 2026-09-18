@@ -110,7 +110,7 @@ export default function TechnologiesPage() {
 
         <div className="limes-visual-exact" aria-hidden="true">
           <Image
-            src="/visuals/limes-hero.png"
+            src="/visuals/limes-hero-v2.jpeg"
             alt=""
             fill
             priority
