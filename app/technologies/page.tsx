@@ -67,14 +67,6 @@ export default function TechnologiesPage() {
           <div className="limes-eyebrow">NOS TECHNOLOGIES</div>
           <div className="limes-rule" />
 
-          <div className="limes-logo-text" aria-label="LIMES">
-            <span>L</span>
-            <span>I</span>
-            <span>M</span>
-            <span className="limes-e">E</span>
-            <span>S</span>
-          </div>
-
           <h1>
             L’intelligence au service
             <br />

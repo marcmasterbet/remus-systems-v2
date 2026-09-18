@@ -8275,3 +8275,166 @@ body:has(.audit-remus-page) .footer button:hover {
     transform:none !important;
   }
 }
+
+/* =========================================================
+   REMUS V2 — FULL BLACK — 18-09-2026
+   Direction validée : noir intégral, logo blanc, cuivre discret.
+   ========================================================= */
+:root {
+  --ivory: #f4f1ed;
+  --ivory-2: #e9e4df;
+  --black: #050505;
+  --muted: rgba(244,241,237,.66);
+  --line: rgba(201,121,66,.16);
+  --copper: #A94F16;
+  --copper-soft: #C97942;
+}
+html, body { background:#050505 !important; color:#f4f1ed !important; }
+body { background-image:radial-gradient(circle at 70% 12%, rgba(169,79,22,.055), transparent 28%) !important; }
+.site-shell, main { background-color:#050505 !important; }
+
+/* Header noir + logo blanc */
+.site-header,
+body:has(.home-reference) .site-header,
+body:has(.audit-remus-page) .site-header {
+  background:rgba(5,5,5,.94) !important;
+  color:#f4f1ed !important;
+  border-bottom:1px solid rgba(255,255,255,.055) !important;
+}
+.remus-header-logo-img {
+  filter:grayscale(1) brightness(0) invert(1) !important;
+  opacity:.96 !important;
+}
+.main-nav a { color:rgba(244,241,237,.72) !important; }
+.main-nav a:hover,.main-nav a.is-active { color:#C97942 !important; }
+.mobile-menu-toggle span { background:#f4f1ed !important; }
+.mobile-menu { background:#050505 !important; color:#f4f1ed !important; }
+.mobile-menu-nav a { color:#f4f1ed !important; border-color:rgba(255,255,255,.08) !important; }
+.mobile-menu-nav a span,.mobile-menu-nav a.is-active { color:#C97942 !important; }
+
+/* Toutes les zones de contenu passent en noir, avec profondeurs subtiles. */
+.home-reference,
+body:has(.home-reference),
+.home-reference .home-feature-strip,
+.audit-remus-page,
+body:has(.audit-remus-page),
+.audit-approach,
+.limes-page,
+.limes-capabilities,
+.solutions-page,
+.rd-page,
+.about-page,
+.contact-page,
+.legal-page {
+  background:#050505 !important;
+  color:#f4f1ed !important;
+}
+.home-reference .home-feature-strip { border-color:rgba(201,121,66,.13) !important; }
+.home-reference .home-feature,
+.home-reference .home-feature-statement,
+.audit-step,
+.audit-final-block,
+.limes-capability,
+.limes-capability-statement {
+  background:#0a0a0a !important;
+  border-color:rgba(201,121,66,.16) !important;
+  box-shadow:none !important;
+}
+.home-reference .home-feature:hover,
+.audit-step:hover,
+.limes-capability:hover { border-color:rgba(201,121,66,.38) !important; }
+
+/* Typographie claire cohérente */
+.home-reference .home-feature h2,
+.home-reference .home-feature-statement strong,
+.audit-step h2,
+.audit-final-copy h2,
+.limes-capability h2,
+.limes-capability-statement strong,
+.page-hero h1,
+section h1, section h2, section h3 { color:#f4f1ed !important; }
+.home-reference .home-feature p,
+.audit-approach p,
+.audit-step p,
+.audit-final-copy p,
+.limes-capability p,
+section p { color:rgba(244,241,237,.66) !important; }
+.eyebrow,
+.audit-section-heading span,
+.audit-final-copy > span { color:#C97942 !important; }
+
+/* Boutons : cuivre réservé aux actions importantes. */
+.button-outline { background:transparent !important; color:#f4f1ed !important; border-color:rgba(201,121,66,.55) !important; }
+.button-outline:hover { border-color:#C97942 !important; background:rgba(201,121,66,.06) !important; }
+
+/* Footer noir sur tout le site. */
+.footer,
+body:has(.home-reference) .footer,
+body:has(.audit-remus-page) .footer {
+  background:#050505 !important;
+  color:rgba(244,241,237,.58) !important;
+  border-top:1px solid rgba(201,121,66,.13) !important;
+}
+.footer-brand strong,.footer-column-title,
+body:has(.home-reference) .footer-brand strong,
+body:has(.home-reference) .footer-column-title,
+body:has(.audit-remus-page) .footer h3,
+body:has(.audit-remus-page) .footer-title,
+body:has(.audit-remus-page) .footer-nav-title,
+body:has(.audit-remus-page) .footer-legal-title { color:#f4f1ed !important; }
+.footer a,.footer p,.footer button,
+body:has(.home-reference) .footer-brand p,
+body:has(.home-reference) .footer-nav a,
+body:has(.home-reference) .footer-legal-links a,
+body:has(.home-reference) .footer-cookie-settings,
+body:has(.audit-remus-page) .footer a,
+body:has(.audit-remus-page) .footer p,
+body:has(.audit-remus-page) .footer button { color:rgba(244,241,237,.58) !important; }
+.footer a:hover,.footer button:hover { color:#C97942 !important; }
+.footer-bottom,body:has(.home-reference) .footer-bottom { border-top-color:rgba(255,255,255,.06) !important; color:rgba(244,241,237,.38) !important; }
+
+/* TECHNOLOGIES : visuel LIMES plein écran, texte superposé, sans doublon LIMES en haut. */
+.limes-hero-exact {
+  min-height:calc(100vh - 108px) !important;
+  background:#030303 !important;
+  display:flex !important;
+  align-items:center !important;
+}
+.limes-hero-exact .limes-logo-text { display:none !important; }
+.limes-hero-exact .limes-visual-exact {
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  transform:none !important;
+  opacity:1 !important;
+}
+.limes-hero-exact .limes-visual-exact img {
+  object-fit:cover !important;
+  object-position:center !important;
+}
+.limes-hero-exact::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(3,3,3,.96) 0%,rgba(3,3,3,.80) 32%,rgba(3,3,3,.34) 58%,rgba(3,3,3,.08) 100%),linear-gradient(180deg,rgba(3,3,3,.18),rgba(3,3,3,.08) 70%,#050505 100%);
+}
+.limes-hero-exact .limes-copy-exact {
+  position:relative !important;
+  z-index:4 !important;
+  width:min(48%,700px) !important;
+  padding:82px 0 82px clamp(28px,6vw,110px) !important;
+}
+.limes-hero-exact .limes-copy-exact h1 { margin-top:28px !important; }
+.limes-capabilities { border-top:1px solid rgba(201,121,66,.12) !important; }
+
+@media (max-width:900px) {
+  .site-header { background:#050505 !important; }
+  .limes-hero-exact { min-height:780px !important; align-items:flex-end !important; }
+  .limes-hero-exact::after { background:linear-gradient(180deg,rgba(3,3,3,.18) 0%,rgba(3,3,3,.58) 38%,rgba(3,3,3,.98) 78%,#050505 100%) !important; }
+  .limes-hero-exact .limes-copy-exact { width:100% !important; padding:330px 24px 54px !important; }
+  .limes-hero-exact .limes-visual-exact { position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; }
+  .limes-hero-exact .limes-visual-exact img { object-fit:cover !important; object-position:62% center !important; }
+}
