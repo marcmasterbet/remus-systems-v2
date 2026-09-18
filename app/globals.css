@@ -8438,3 +8438,42 @@ body:has(.audit-remus-page) .footer button { color:rgba(244,241,237,.58) !import
   .limes-hero-exact .limes-visual-exact { position:absolute !important; inset:0 !important; width:100% !important; height:100% !important; }
   .limes-hero-exact .limes-visual-exact img { object-fit:cover !important; object-position:62% center !important; }
 }
+
+/* =========================================================
+   REMUS V2 — VISUELS SANS VOILE — 18-09-2026
+   Les images restent nettes et lumineuses. La lisibilité du texte
+   est assurée par une ombre locale, sans calque sombre sur le visuel.
+   ========================================================= */
+.home-reference .home-network::before,
+.home-reference .home-network::after,
+.audit-premium-visual::before,
+.audit-premium-visual::after,
+.limes-hero-exact::after {
+  display:none !important;
+  background:none !important;
+}
+.home-reference .home-network img,
+.audit-cube-image,
+.limes-hero-exact .limes-visual-exact img {
+  opacity:1 !important;
+  filter:none !important;
+}
+.home-reference .home-copy,
+.audit-premium-copy,
+.limes-hero-exact .limes-copy-exact {
+  text-shadow:0 2px 18px rgba(0,0,0,.72), 0 1px 4px rgba(0,0,0,.9);
+}
+.home-reference .home-copy p,
+.audit-premium-copy p,
+.limes-hero-exact .limes-copy-exact p {
+  text-shadow:0 2px 12px rgba(0,0,0,.9);
+}
+@media (max-width:900px) {
+  .home-reference .home-network::before,
+  .home-reference .home-network::after,
+  .audit-premium-visual::before,
+  .audit-premium-visual::after,
+  .limes-hero-exact::after {
+    display:none !important;
+  }
+}
