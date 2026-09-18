@@ -8031,3 +8031,144 @@ body:has(.audit-remus-page) .footer button { color: rgba(247,244,239,.78) !impor
     transform-origin: 58% center !important;
   }
 }
+
+/* =========================================================
+   REMUS V2 — HYBRIDE VALIDÉ 18-09-2026
+   Header ivoire -> hero noir -> contenu ivoire
+   Accueil + Audit REMUS uniquement.
+   ========================================================= */
+
+/* Header : conserver l'identité claire REMUS au-dessus des héros noirs. */
+body:has(.home-reference) .site-header,
+body:has(.audit-remus-page) .site-header {
+  background: #F7F4EF !important;
+}
+
+/* ACCUEIL — seul le hero reste sombre. */
+body:has(.home-reference) {
+  background: #F7F4EF !important;
+}
+.home-reference {
+  background: #F7F4EF !important;
+}
+.home-reference .home-feature-strip {
+  background: #F7F4EF !important;
+  border-top: 1px solid #D8CEC2 !important;
+  border-bottom: 1px solid #D8CEC2 !important;
+}
+.home-reference .home-feature,
+.home-reference .home-feature-statement {
+  background: #FBF9F6 !important;
+  border: 1px solid #D8CEC2 !important;
+  box-shadow: none !important;
+}
+.home-reference .home-feature:hover {
+  border-color: rgba(169,79,22,.45) !important;
+  box-shadow: 0 18px 42px rgba(17,17,17,.06) !important;
+}
+.home-reference .home-feature-icon {
+  background: transparent !important;
+  border-color: rgba(169,79,22,.38) !important;
+}
+.home-reference .home-feature h2,
+.home-reference .home-feature-statement strong {
+  color: #111111 !important;
+}
+.home-reference .home-feature p {
+  color: #55514C !important;
+}
+body:has(.home-reference) .footer {
+  background: #F7F4EF !important;
+  border-top: 1px solid #D8CEC2 !important;
+  color: #55514C !important;
+}
+body:has(.home-reference) .footer-brand strong,
+body:has(.home-reference) .footer-column-title {
+  color: #111111 !important;
+}
+body:has(.home-reference) .footer-brand p,
+body:has(.home-reference) .footer-nav a,
+body:has(.home-reference) .footer-legal-links a,
+body:has(.home-reference) .footer-cookie-settings {
+  color: #55514C !important;
+}
+body:has(.home-reference) .footer-nav a:hover,
+body:has(.home-reference) .footer-legal-links a:hover,
+body:has(.home-reference) .footer-cookie-settings:hover {
+  color: #A94F16 !important;
+}
+body:has(.home-reference) .footer-bottom {
+  border-top-color: #D8CEC2 !important;
+  color: #77716B !important;
+}
+
+/* AUDIT — le hero/visuel reste noir, tout ce qui suit revient en ivoire. */
+body:has(.audit-remus-page) {
+  background: #F7F4EF !important;
+}
+.audit-remus-page {
+  background: #F7F4EF !important;
+  color: #111111 !important;
+}
+.audit-premium-hero {
+  background: #050505 !important;
+  color: #F7F4EF !important;
+}
+.audit-approach {
+  background: #F7F4EF !important;
+  color: #111111 !important;
+}
+.audit-approach p {
+  color: #55514C !important;
+}
+.audit-section-heading span,
+.audit-final-copy > span {
+  color: #A94F16 !important;
+}
+.audit-step {
+  background: #FBF9F6 !important;
+  border-color: #D8CEC2 !important;
+}
+.audit-step h2 {
+  color: #111111 !important;
+}
+.audit-step p {
+  color: #55514C !important;
+}
+.audit-step-symbol {
+  border-color: rgba(169,79,22,.42) !important;
+  color: #A94F16 !important;
+}
+.audit-final-block {
+  background: #FBF9F6 !important;
+  border-color: #D8CEC2 !important;
+}
+.audit-final-copy h2 {
+  color: #111111 !important;
+}
+.audit-final-copy h2 strong {
+  color: #A94F16 !important;
+}
+.audit-final-copy p {
+  color: #55514C !important;
+}
+body:has(.audit-remus-page) .footer {
+  background: #F7F4EF !important;
+  color: #55514C !important;
+  border-top: 1px solid #D8CEC2 !important;
+}
+body:has(.audit-remus-page) .footer h3,
+body:has(.audit-remus-page) .footer-title,
+body:has(.audit-remus-page) .footer-nav-title,
+body:has(.audit-remus-page) .footer-legal-title {
+  color: #111111 !important;
+}
+body:has(.audit-remus-page) .footer a,
+body:has(.audit-remus-page) .footer p,
+body:has(.audit-remus-page) .footer button {
+  color: #55514C !important;
+}
+body:has(.audit-remus-page) .footer a:hover,
+body:has(.audit-remus-page) .footer button:hover {
+  color: #A94F16 !important;
+}
