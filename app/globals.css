@@ -8174,8 +8174,9 @@ body:has(.audit-remus-page) .footer button:hover {
 }
 
 /* =========================================================
-   REMUS V2 — TECHNOLOGIES / LIMES — HERO PLEIN ECRAN
-   Visuel exact en fond, texte HTML superpose.
+   REMUS V2 — TECHNOLOGIES / LIMES — CLEAN
+   Header ivoire → hero noir → contenu ivoire.
+   Texte HTML visible à gauche, visuel LIMES réduit à droite.
    ========================================================= */
 .limes-page { background:#F7F4EF !important; }
 
@@ -8183,61 +8184,30 @@ body:has(.audit-remus-page) .footer button:hover {
   position:relative !important;
   width:100% !important;
   max-width:none !important;
-  min-height:clamp(700px, calc(100vh - 92px), 940px) !important;
+  min-height:720px !important;
   margin:0 !important;
   background:#050403 !important;
   overflow:hidden !important;
-  display:flex !important;
-  align-items:center !important;
-}
-.limes-hero-exact::after {
-  content:"" !important;
-  position:absolute !important;
-  inset:0 !important;
-  z-index:2 !important;
-  pointer-events:none !important;
-  background:linear-gradient(90deg, rgba(3,3,3,.94) 0%, rgba(3,3,3,.78) 24%, rgba(3,3,3,.32) 47%, rgba(3,3,3,.04) 68%, rgba(3,3,3,.08) 100%) !important;
-}
-.limes-hero-exact .limes-visual-exact {
   display:block !important;
-  position:absolute !important;
-  z-index:1 !important;
-  inset:0 !important;
-  width:100% !important;
-  height:100% !important;
-  transform:none !important;
-  overflow:hidden !important;
-  pointer-events:none !important;
 }
-.limes-hero-exact .limes-visual-exact::before { display:none !important; }
-.limes-hero-exact .limes-visual-exact img {
-  width:100% !important;
-  height:100% !important;
-  object-fit:cover !important;
-  object-position:center center !important;
-  mix-blend-mode:normal !important;
-  filter:none !important;
-  opacity:1 !important;
-  transform:none !important;
-  animation:none !important;
-}
+
 .limes-hero-exact .limes-copy-exact {
   display:block !important;
   position:relative !important;
-  z-index:3 !important;
-  width:min(46%, 690px) !important;
-  padding:72px 0 72px clamp(24px, 5.5vw, 92px) !important;
+  z-index:5 !important;
+  width:min(46%, 650px) !important;
+  padding:105px 0 90px clamp(24px, 5.5vw, 92px) !important;
   color:#F7F4EF !important;
 }
-.limes-hero-exact .limes-logo-text { display:none !important; }
 .limes-hero-exact .limes-eyebrow { color:#C97942 !important; }
 .limes-hero-exact .limes-rule { background:#A94F16 !important; }
+.limes-hero-exact .limes-logo-text { color:#F7F4EF !important; }
 .limes-hero-exact .limes-copy-exact h1 {
   margin:28px 0 0 !important;
   color:#F7F4EF !important;
   font-family:"Segoe UI",Arial,Helvetica,sans-serif !important;
-  font-size:clamp(42px,4.2vw,72px) !important;
-  line-height:1.07 !important;
+  font-size:clamp(38px,3.7vw,64px) !important;
+  line-height:1.08 !important;
   letter-spacing:-.035em !important;
   font-weight:700 !important;
   text-transform:none !important;
@@ -8248,28 +8218,60 @@ body:has(.audit-remus-page) .footer button:hover {
   letter-spacing:-.025em !important;
 }
 .limes-hero-exact .limes-copy-exact p {
-  color:#F1EAE2 !important;
+  color:#E8E0D7 !important;
   font-size:17px !important;
-  line-height:1.8 !important;
-  max-width:580px !important;
-  text-shadow:0 2px 16px rgba(0,0,0,.7) !important;
+  line-height:1.85 !important;
+  max-width:570px !important;
 }
-.limes-hero-exact .limes-actions { position:relative !important; z-index:4 !important; }
-.limes-hero-exact .limes-button--outline { color:#F7F4EF !important; border-color:#A94F16 !important; background:rgba(5,4,3,.32) !important; }
+.limes-hero-exact .limes-actions { position:relative !important; z-index:6 !important; }
+.limes-hero-exact .limes-button--outline { color:#F7F4EF !important; border-color:#A94F16 !important; }
+
+.limes-hero-exact .limes-visual-exact {
+  display:block !important;
+  position:absolute !important;
+  z-index:1 !important;
+  top:50% !important;
+  right:1.5% !important;
+  left:auto !important;
+  bottom:auto !important;
+  width:54% !important;
+  height:82% !important;
+  transform:translateY(-50%) !important;
+  overflow:hidden !important;
+  pointer-events:none !important;
+}
+.limes-hero-exact .limes-visual-exact::before { display:none !important; }
+.limes-hero-exact .limes-visual-exact img {
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center right !important;
+  mix-blend-mode:normal !important;
+  filter:none !important;
+  opacity:1 !important;
+  transform:none !important;
+  animation:none !important;
+}
 .limes-hero-exact .limes-signature { display:none !important; }
 .limes-capabilities { background:#F7F4EF !important; color:#111111 !important; }
 
 @media (max-width:900px) {
-  .limes-hero-exact { min-height:780px !important; align-items:flex-end !important; }
-  .limes-hero-exact::after {
-    background:linear-gradient(180deg, rgba(3,3,3,.12) 0%, rgba(3,3,3,.28) 34%, rgba(3,3,3,.92) 72%, #050403 100%) !important;
-  }
-  .limes-hero-exact .limes-visual-exact img { object-position:center top !important; }
+  .limes-hero-exact { min-height:auto !important; padding-bottom:28px !important; }
   .limes-hero-exact .limes-copy-exact {
-    width:100% !important;
-    padding:310px 24px 54px !important;
+    width:auto !important;
+    padding:58px 24px 28px !important;
   }
-  .limes-hero-exact .limes-copy-exact h1 { font-size:clamp(36px,10vw,54px) !important; }
-  .limes-hero-exact .limes-copy-exact p { font-size:15px !important; max-width:520px !important; }
-  .limes-hero-exact .limes-actions { flex-direction:column !important; align-items:flex-start !important; }
+  .limes-hero-exact .limes-copy-exact h1 { font-size:clamp(34px,9vw,52px) !important; }
+  .limes-hero-exact .limes-copy-exact p { font-size:15px !important; }
+  .limes-hero-exact .limes-copy-exact p br { display:none !important; }
+  .limes-hero-exact .limes-visual-exact {
+    position:relative !important;
+    top:auto !important;
+    right:auto !important;
+    width:92% !important;
+    height:auto !important;
+    aspect-ratio:16/9 !important;
+    margin:0 auto !important;
+    transform:none !important;
+  }
 }
